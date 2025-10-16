@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Report</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h3>Latest Top <span id="title" ></span> Headlines News in INDIA</h3>
+    </header>
+    <nav>
+        <button onclick="fetchNews(this.value)" id="home" value="general">General</button>
+        <button onclick="fetchNews(this.value)" id="World" value="world">World</button>
+        <button onclick="fetchNews(this.value)" id="nation" value="nation">Nation</button>
+        <button onclick="fetchNews(this.value)" id="business"value="business">Business</button>
+        <button onclick="fetchNews(this.value)" id="technology"value="technology">Technology</button>
+        <button onclick="fetchNews(this.value)" id="entertainment" value="entertainment">Entertainment</button>
+        <button onclick="fetchNews(this.value)" id="sports" value="sports">Sports</button>
+        <button onclick="fetchNews(this.value)" id="science" value="science">Science</button>
+        <button onclick="fetchNews(this.value)" id="health" value="health">Health</button>
+    </nav>
+    <section>
+        <div class="container" id="newsAccordian">
+            <!-- News Cards -->
+            <!-- <div class="card">
+                <div class="img">
+                    <img src="" alt="img">
+                </div>
+                <div class="content">
+                    <h4>Lorem ipsum dolor sit</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sint, provident magnam officiis non, recusandae quisquam odit id repellendus beatae facilis pariatur aliquam illum eius aspernatur harum deserunt, ea earum.</p>
+                    <button href="#">Read more...</button>
+                </div>
+            </div> -->
+            <!-- News Cards Ends -->
+        </div>
+    </section>
+    <!-- <div class="nextPage">
+        <button id="prev" onclick="previousPage()">Previous</button>
+        <button id="next" onclick="nextPage()">Next</button>
+    </div> -->
+    <footer>
+        <p>Copyright &copy; 2025 | All Rights Reserved</p>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
