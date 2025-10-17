@@ -1,27 +1,14 @@
 // News API and fetch data from it and display it in the browser
 
-const proxy = "https://api.allorigins.win/raw?url=";
 const newsKey = "b73842219062446de118899d3359f40c"
 
 // let page = 1;
 // let url = `https://gnews.io/api/v4/top-headlines?category=sports&lang=en&country=in&max=10&page=${page}&apikey=${newsKey}`
 
-/*
-
-fetch(proxy + encodeURIComponent(api))
-.then(res => res.json())
-.then(data => console.log(data))
-.catch(err => console.error(err));
-
-*/
-
-
-
 fetchNews("general");
 
 function fetchNews(category) {
-    const api = `https://gnews.io/api/v4/top-headlines?category=${category}&lang=en&country=in&max=10&apikey=${newsKey}`;
-    fetch(proxy + encodeURIComponent(api))
+    fetch(`https://gnews.io/api/v4/top-headlines?category=${category}&lang=en&country=in&max=10&apikey=${newsKey}`)
     .then((res)=>{
         return res.json();
     })
